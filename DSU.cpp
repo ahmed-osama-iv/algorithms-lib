@@ -11,7 +11,7 @@ struct DSU{
  
     int root(int i){
         while(i != id[i])
-            i = id[i] = i[id][id]; //equvilant to id[id[i]]
+            i = id[i] = i[id][id]; //equivalent to id[id[i]]
         return i;
     }
  
