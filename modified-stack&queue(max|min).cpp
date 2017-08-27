@@ -1,13 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-struct maxi_stack{
+
+inline int op(int a, int b){
+    return max(a,b);
+}
+
+static const int I = INT_MIN; // -inf for minimum op , +inf for maximum op
+
+struct m_stack{
 
     stack<pair<int,int> > st;
 
     void push(int item){
         if(!st.empty())
-            st.push({item, max(item, st.top().second)});
+            st.push({item, op(item, st.top().second)});
         else
             st.push({item, item});
     }
@@ -16,10 +23,10 @@ struct maxi_stack{
         st.pop();
     }
 
-    int getMax(){
+    int getM(){
         if(!st.empty())
             return st.top().second;
-        return 0;
+        return I;
     }
 
     int top(){
@@ -37,9 +44,9 @@ struct maxi_stack{
     }
 };
 
-struct maxi_queue{
+struct m_queue{
 
-    maxi_stack in,out;
+    m_stack in,out;
 
     void push(int x){
         in.push(x);
@@ -52,8 +59,8 @@ struct maxi_queue{
         out.pop();
     }
 
-    int getMax(){
-        return max(in.getMax(),out.getMax());
+    int getM(){
+        return op(in.getM(),out.getM());
     }
 
     int size(){
@@ -64,4 +71,3 @@ struct maxi_queue{
         return !size();
     }
 };
-
