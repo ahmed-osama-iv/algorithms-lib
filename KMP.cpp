@@ -43,8 +43,8 @@
     int main () {
      
         string s, p;
-        s = "abxababaaba";
-        p = "aba";
+        s = "abxababaaba"; //0 0 0 1 2 1 2 1 1 2 1
+        p = "aba"; //0 0 1
      
         kmp(s, p);
      
