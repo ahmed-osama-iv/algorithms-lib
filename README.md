@@ -2,19 +2,19 @@
 Collection of widely used algorithms in competitive programming contests
 Algorithms included are:
 
-Graph Algorithms:
+## Graph Algorithms:
 
-  SSSP algorithms: 
-    Dihkstra,
-    Bellman Ford.
+  * SSSP algorithms: 
+    * Dijkstra.
+    * Bellman Ford.
 
-  APSP Algorithms:
-    Floyd Warshall.
+  * APSP Algorithms:
+    * Floyd Warshall.
     
-  MST Algorithms:
-    Prim,
-    Kruskal.
+  * MST Algorithms:
+    * Prim.
+    * Kruskal.
   
 
-Math :
-  Grey Code.
+## Math :
+  * Grey Code.
