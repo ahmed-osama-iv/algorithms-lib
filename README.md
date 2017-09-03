@@ -6,15 +6,18 @@ Algorithms included are:
 
   * SSSP algorithms: 
     * Dijkstra.
-    * Bellman Ford.
 
   * APSP Algorithms:
     * Floyd Warshall.
     
   * MST Algorithms:
-    * Prim.
     * Kruskal.
-  
 
-## Math :
+## Mathematics:
   * Grey Code.
+  * Fibonacci O(log n).
+  * Binomial Coefficient.
+  
+## Data Structures:
+  * Sparse Table.
+  * Disjoint Set (Union-Find).
