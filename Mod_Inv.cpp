@@ -16,5 +16,5 @@ int fast_power(ll x, ll n, int mod) { //where 1 < mod < max_int;
 }
 
 int mod_inv(int a, int mod){
-    return fast_power(a, mod-2, mod);
+    return fast_power(a, mod-2, mod); // value of (1/a)%mod;
 }
