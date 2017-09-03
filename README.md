@@ -16,8 +16,13 @@ Algorithms included are:
 ## Mathematics:
   * Grey Code.
   * Fibonacci O(log n).
+  * Fast Power.
   * Binomial Coefficient.
   
 ## Data Structures:
   * Sparse Table.
   * Disjoint Set (Union-Find).
+  * Bitmasks.
+  
+## Strings:
+  * KMP.
