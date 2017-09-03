@@ -2,7 +2,7 @@
 Collection of widely used algorithms in competitive programming contests
 Algorithms included are:
 
-## Graph Algorithms:
+### Graph Algorithms:
 
   * SSSP algorithms: 
     * Dijkstra.
@@ -13,16 +13,16 @@ Algorithms included are:
   * MST Algorithms:
     * Kruskal.
 
-## Mathematics:
+### Mathematics:
   * Grey Code.
   * Fibonacci O(log n).
   * Fast Power.
   * Binomial Coefficient.
   
-## Data Structures:
+### Data Structures:
   * Sparse Table.
   * Disjoint Set (Union-Find).
   * Bitmasks.
   
-## Strings:
+### Strings:
   * KMP.
