@@ -1,4 +1,3 @@
-
 struct trie {
     
     static const int MAX_CHAR = 26; //if MAX_CHAR is big range but not all values are used, use a map instead of static array
