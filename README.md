@@ -26,3 +26,4 @@ Algorithms included are:
   
 ### Strings:
   * KMP.
+  * Trie
