@@ -2,11 +2,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//typedef long long ll;
-
-const int MAX_N = 300005; // max input size;
-const int MAX_Q = 2000006; // max number of queries
-const int SQRTN = 175;  // sqrt(MAX_N)
+const int MAX_N = 30004; // max input size;
+const int MAX_Q = 200005; // max number of queries
+const int SQRTN = 174;  // sqrt(MAX_N)
 
 int input[MAX_N]; //input array;
 int q_ans[MAX_Q]; //answer of i'th query
@@ -28,20 +26,20 @@ struct query {
 query queries[MAX_Q]; // array of queries.
 
 // You need to update following data structure per problem (e.g. use multiset) ***********
-int cnt[10000007]; // where values of input are in [0,1000000] inclusive.
+int cnt[1000006]; // where values of input are in [0,1000000] inclusive.
 int result = 0; // global variable edited by add & remove methods , used to calculate the answer for each query
 //****************************************************************************************
 
 // You need to update add & remove methods per a problem ***
 void add(int idx) {
     cnt[input[idx]]++;
-    if (cnt[input[idx]] == 3)
+    if (cnt[input[idx]] == 1)
         result++;
 }
 
 void remove(int idx) {
     cnt[input[idx]]--;
-    if (cnt[input[idx]] == 2)
+    if (cnt[input[idx]] == 0)
         result--;
 }
 //**********************************************************
@@ -61,14 +59,13 @@ void process(int m) {  // don't change
 
 
 int main() {
-    int n, m; // input size,  number of queries
+    int n, m, left, right; // input size,  number of queries
     scanf("%d", &n); // input size;
     for (int i = 0; i < n; i++)
         scanf("%d", &input[i]);
 
     scanf("%d", &m); // number of queries
     for (int i = 0; i < m; i++) {
-        int left, right;
         scanf("%d%d", &left, &right); // one indexed
         queries[i] = query(left, right, i);
     }
