@@ -1,6 +1,6 @@
 typedef long long ll;
 
-vector<vector<ll> > matrixMult(vector<vector<ll> > A, vector<vector<ll> > B, const int N, const int R, const int M ){ //where A is NxR & B is RxM
+vector<vector<ll> > matrixMult(vector<vector<ll> > &A, vector<vector<ll> > &B, const int N, const int R, const int M ){ //where A is NxR & B is RxM
     vector<vector<ll> > C (N);
 
     for(int i = 0; i < N; ++i)
@@ -13,7 +13,7 @@ vector<vector<ll> > matrixMult(vector<vector<ll> > A, vector<vector<ll> > B, con
     return C;
 }
 
-vector<vector<ll> > matrixPow(vector<vector<ll> > A, const int N, int pow ){ //where A is NxN
+vector<vector<ll> > matrixPow(vector<vector<ll> > &A, const int N, int pow ){ //where A is NxN
     vector<vector<ll> > I (N);
 
     for(int i = 0; i < N; ++i){
