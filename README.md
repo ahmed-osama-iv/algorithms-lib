@@ -18,6 +18,8 @@ Algorithms included are:
   * Fibonacci O(log n).
   * Fast Power.
   * Binomial Coefficient.
+  * Matrix Multiplication & Matrix Power.
+  * Modular Inverse.
   
 ### Data Structures:
   * Sparse Table.
@@ -27,3 +29,6 @@ Algorithms included are:
 ### Strings:
   * KMP.
   * Trie.
+
+### Other:
+  * Mo's Algorithm.
