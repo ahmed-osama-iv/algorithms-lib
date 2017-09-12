@@ -25,6 +25,7 @@ Algorithms included are:
   * Sparse Table.
   * Disjoint Set (Union-Find).
   * Bitmasks.
+  * Modified Stack & Queue - find min|max in O(1).
   
 ### Strings:
   * KMP.
@@ -32,3 +33,4 @@ Algorithms included are:
 
 ### Other:
   * Mo's Algorithm.
+  * Maximum Sub-Array Sum(Kadane's Algorithm).
